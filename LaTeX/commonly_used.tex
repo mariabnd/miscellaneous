@@ -1,11 +1,24 @@
+% Refering
 \newcommand{\tabref}[1]{Table~\ref{#1}}
 \newcommand{\figref}[1]{Figure~\ref{#1}}
 \newcommand{\exmref}[1]{Example~\ref{#1}}
 \newcommand{\secref}[1]{Section~\ref{#1}}
 
+% TODOs
 \usepackage{xcolor}
-\newcommand{\red}[1]{{\color{red} #1}}
+\newcommand{\todo}[1]{{\color{red} #1}}
 
 \providecommand{\keywords}[1]{\textbf{Keywords:} #1}
 
 \def\indep{\perp\!\!\!\perp}
+
+% Render code similarly to how JStatSoft does
+\newcommand{\code}[1]{\texttt{\detokenize{#1}}}
+
+% Encoding etc.
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[british]{babel}
+
+\usepackage{amsmath}
+\newcommand*{\dd}{\ensuremath{\operatorname{d}\!}} %Fulfils ISO 80000-2 (preceeded by ISO 31-11)
