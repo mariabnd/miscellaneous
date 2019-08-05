@@ -12,3 +12,6 @@ An overview of mailing lists or newsletters that are worth signing up for
 * [Public Health England exposure posts](https://publichealthengland.exposure.co/)
 * [Program for monitoring emerging diseases (ProMED)](http://www.promedmail.org/)
 * [R Epidemics Consortium (RECON)](https://www.repidemicsconsortium.org/)
+
+## Climate
+* [Silencing Science tracker](http://columbiaclimatelaw.com/resources/silencing-science-tracker/)
