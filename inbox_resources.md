@@ -15,3 +15,7 @@ An overview of mailing lists or newsletters that are worth signing up for
 
 ## Climate
 * [Silencing Science tracker](http://columbiaclimatelaw.com/resources/silencing-science-tracker/)
+
+## Funding
+* [Mozilla research grants](https://mail.mozilla.org/listinfo/mozilla-research-grant)
+* [Wellcome](https://wellcome.ac.uk/funding)
