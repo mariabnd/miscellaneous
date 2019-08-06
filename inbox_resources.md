@@ -20,3 +20,6 @@ An overview of mailing lists or newsletters that are worth signing up for
 ## Funding
 * [Mozilla research grants](https://mail.mozilla.org/listinfo/mozilla-research-grant)
 * [Wellcome](https://wellcome.ac.uk/funding)
+
+## Publishing
+* [Retraction Watch](https://retractionwatch.com/)
