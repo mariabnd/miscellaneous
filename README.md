@@ -2,7 +2,10 @@
 
 # Miscellaneous
 
-This repository is my catch-all.
+This repository is my catch-all. It currently contains
+* some [LaTeX](LaTeX)
+* some [R](R)
+* [a list of interesting newsletters](inbox_resources.md)
 
 ## License
 
