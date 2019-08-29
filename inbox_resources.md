@@ -12,10 +12,12 @@ An overview of mailing lists or newsletters that are worth signing up for
 * [Public Health England exposure posts](https://publichealthengland.exposure.co/)
 * [Program for monitoring emerging diseases (ProMED)](http://www.promedmail.org/)
 * [R Epidemics Consortium (RECON)](https://www.repidemicsconsortium.org/)
-* [London centre for neglected tropical disease research (LCNTDR)](https://www.londonntd.org/)
+* [London Centre for Neglected Tropical Disease Research (LCNTDR)](https://www.londonntd.org/)
+* [London School of Hygiene & Tropical Medicine (LSHTM) newsletter](https://www.lshtm.ac.uk/newsevents/newsletter-signup)
 
 ## Climate
 * [Silencing Science tracker](http://columbiaclimatelaw.com/resources/silencing-science-tracker/)
+* [United Nations University (UNU) INSIGHTS](https://unu.edu/insights)
 
 ## Funding
 * [Mozilla research grants](https://mail.mozilla.org/listinfo/mozilla-research-grant)
@@ -23,3 +25,6 @@ An overview of mailing lists or newsletters that are worth signing up for
 
 ## Publishing
 * [Retraction Watch](https://retractionwatch.com/)
+
+## Coding
+* [Compassionate coding](https://compassionatecoding.com/)
