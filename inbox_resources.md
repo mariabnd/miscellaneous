@@ -28,3 +28,8 @@ An overview of mailing lists or newsletters that are worth signing up for
 
 ## Coding
 * [Compassionate coding](https://compassionatecoding.com/)
+
+## Statistics
+* [ALLSTAT](https://www.jiscmail.ac.uk/cgi-bin/webadmin?A0=ALLSTAT)
+* [RSS Young Statisticians Section](https://www.jiscmail.ac.uk/cgi-bin/webadmin?A0=YOUNG-RSS)
+* [RSS Environmental Statistics Section](https://www.jiscmail.ac.uk/cgi-bin/webadmin?A0=ENVSTAT)
