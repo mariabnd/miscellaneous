@@ -15,6 +15,9 @@ An overview of mailing lists or newsletters that are worth signing up for
 * [London Centre for Neglected Tropical Disease Research (LCNTDR)](https://www.londonntd.org/)
 * [London School of Hygiene & Tropical Medicine (LSHTM) newsletter](https://www.lshtm.ac.uk/newsevents/newsletter-signup)
 
+## Humanitarian crises
+* [Norwegian refugee council](https://www.nrc.no/)
+
 ## Climate
 * [Silencing Science tracker](http://columbiaclimatelaw.com/resources/silencing-science-tracker/)
 * [United Nations University (UNU) INSIGHTS](https://unu.edu/insights)
