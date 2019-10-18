@@ -6,6 +6,7 @@ This repository is my catch-all. It currently contains
 * some [LaTeX](LaTeX)
 * some [R](R)
 * [a list of interesting newsletters](inbox_resources.md)
+* [a list of places to find grey literature](grey_literature.md)
 
 ## License
 
