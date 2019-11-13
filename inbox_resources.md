@@ -22,6 +22,9 @@ An overview of mailing lists or newsletters that are worth signing up for
 * [Silencing Science tracker](http://columbiaclimatelaw.com/resources/silencing-science-tracker/)
 * [United Nations University (UNU) INSIGHTS](https://unu.edu/insights)
 
+## Health
+* [World Health Organization's newsletter](https://www.who.int/mediacentre/multimedia/newsletter/en/)
+
 ## Funding
 * [Mozilla research grants](https://mail.mozilla.org/listinfo/mozilla-research-grant)
 * [Wellcome](https://wellcome.ac.uk/funding)
