@@ -36,3 +36,4 @@ An overview of mailing lists or newsletters that are worth signing up for
 * [ALLSTAT](https://www.jiscmail.ac.uk/cgi-bin/webadmin?A0=ALLSTAT)
 * [RSS Young Statisticians Section](https://www.jiscmail.ac.uk/cgi-bin/webadmin?A0=YOUNG-RSS)
 * [RSS Environmental Statistics Section](https://www.jiscmail.ac.uk/cgi-bin/webadmin?A0=ENVSTAT)
+* [Bayes Nordics](https://sites.google.com/site/bayesnordics/)
