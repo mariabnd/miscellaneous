@@ -2,11 +2,11 @@
 
 # Miscellaneous
 
-This repository is my catch-all. It currently contains
+This repository is my catch-all for code. It currently contains
 * some [LaTeX](LaTeX)
 * some [R](R)
-* [a list of interesting newsletters](inbox_resources.md)
-* [a list of places to find grey literature](grey_literature.md)
+
+For other resources, see [Resources](https://github.com/mariabnd/resources)
 
 ## License
 
