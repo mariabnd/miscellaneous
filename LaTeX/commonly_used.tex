@@ -15,7 +15,19 @@
 \def\indep{\perp\!\!\!\perp}
 
 % Render code similarly to how JStatSoft does
-\newcommand{\code}[1]{\texttt{\detokenize{#1}}}
+\newcommand{\code}[1]{%
+	{\catcode`\%=12 \texttt{\detokenize{#1}}}
+}
+% Additional JStatSoft-inspired bits
+\let\proglang=\textsf
+\newcommand{\pkg}[1]{{\fontseries{b}\selectfont #1}}
+
+% Bibliography
+\usepackage[sort]{natbib}
+\bibliographystyle{plainnat}
+\setcitestyle{numbers} % set the citation style to ``numbers''.
+% TO get numbered bibliography list % SOURCE tex.stackexchange.com/a/412250
+%\bibliography{references}
 
 % Encoding etc.
 \usepackage[utf8]{inputenc}
