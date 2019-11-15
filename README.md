@@ -6,7 +6,7 @@ This repository is my catch-all for code. It currently contains
 * some [LaTeX](LaTeX)
 * some [R](R)
 
-For other resources, see [Resources](https://github.com/mariabnd/resources)
+For other resources, see _[Resources](https://github.com/mariabnd/resources)_ and for gists go [here](https://gist.github.com/mariabnd).
 
 ## License
 
