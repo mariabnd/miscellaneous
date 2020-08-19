@@ -7,6 +7,7 @@
 % TODOs and not considering
 \usepackage{xcolor}
 \newcommand{\todo}[1]{{\color{red} #1}}
+\newcommand{\add}[1]{{\color{blue} #1}}
 \newcommand{\ignore}[1]{} % (not called skip to avoid confusion)
 \colorlet{grey}{gray} % Added to avoid error messages
 
@@ -44,3 +45,9 @@
 	\BODY
 	\end{split}
 	\end{align}}
+\NewEnviron{salign*}{%
+	\begin{align*}
+	\begin{split}
+	\BODY
+	\end{split}
+	\end{align*}}
