@@ -7,7 +7,7 @@
 \setlength{\intextsep}{1pt} % Vertical padding around wrapfigure environ
 \usepackage{boxedminipage}
 
-\newcounter{fobox}[subsection]
+\newcounter{fobox}[subsection] % Named "fobox" to differentiate from "infobox"
 \newenvironment{infobox}[3]{
 	\refstepcounter{fobox}\par
 	\wrapfigure{#2}{#3}
