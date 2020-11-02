@@ -1,4 +1,4 @@
-\documentclass[12pt]{scrartcl}
+\documentclass[12pt]{scrbook}
 
 % Adding numbers to info boxes from
 % https://tex.stackexchange.com/q/457897
@@ -7,7 +7,9 @@
 \setlength{\intextsep}{1pt} % Vertical padding around wrapfigure environ
 \usepackage{boxedminipage}
 
-\newcounter{fobox}[subsection] % Named "fobox" to differentiate from "infobox"
+\newcounter{fobox}[chapter] % Named "fobox" to differentiate from "infobox"
+\renewcommand{\thefobox}{\thechapter.\arabic{fobox}} % Count within chapter
+
 \newenvironment{infobox}[3]{
 	\refstepcounter{fobox}\par
 	\wrapfigure{#2}{#3}
@@ -18,7 +20,7 @@
 
 \begin{document}
 
-\section{Testing the info box}
+\chapter{Testing the info box}
 
 Here is some text I would have written before the info box. Here is some text I would have written before the info box. Here is some text I would have written before the info box. Here is some text I would have written before the info box. Here is some text I would have written before the info box. Here is some text I would have written before the info box. Here is some text I would have written before the info box. Here is some text I would have written before the info box. Here is some text I would have written before the info box. Here is some text I would have written before the info box.
 
