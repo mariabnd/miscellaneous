@@ -1,0 +1,64 @@
+%KOMAscript-based slides
+\documentclass[paper = 9.6cm:12.8cm, paper = landscape, fontsize = 8pt, pagesize, parskip = half, DIV = calc]{scrartcl}
+
+\usepackage[british]{babel}
+
+% Colours
+\usepackage{xcolor}
+\colorlet{grey}{gray}
+
+% Fix default date
+\usepackage[UKenglish]{datetime}
+\let\dateUKenglish\relax
+\newdateformat{dateUKenglish}{\ordinaldate{\THEDAY}~\monthname[\THEMONTH] \THEYEAR}
+
+% Margins
+\usepackage[includeheadfoot, top = 3mm, bottom = 3mm, left = 5.5mm, right = 5.5mm, headsep = 6.5mm, footskip = 5mm]{geometry}
+
+\usepackage{tikz}
+\usepackage{lastpage} % For printing the total number of pages at the bottom of each slide
+
+% Layout settings
+\usepackage{scrlayer-scrpage}
+\pagestyle{scrheadings}
+\clearscrheadfoot % Remove defaults, e.g. page numbers at bottom of page
+\setkomafont{pageheadfoot}{\normalfont\sffamily} % Set font in header and footer to be sffamily
+\addtokomafont{pagefoot}{\scriptsize}
+\addtokomafont{headsepline}{\color{grey}}
+\KOMAoptions{headsepline = 0.2pt:\textwidth}
+\setlength{\footheight}{5mm} % Height of the footer
+\ofoot{\pagemark/\pageref{LastPage}} % Page numbering
+\ihead{\includegraphics[scale = 0.05]{example-image}} % Logo in header
+
+% Do not add numbering to sections
+\setcounter{secnumdepth}{0}
+% Do not include all section depths in TOC
+\setcounter{tocdepth}{1}
+% Remove page numbers from TOC slide
+\addtocontents{toc}{\protect\thispagestyle{empty}}
+
+\addtokomafont{title}{\color{grey}}
+\addtokomafont{date}{\small}
+\title{Some words that make up an example title}
+\author{First Last}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+\thispagestyle{empty}
+\clearpage
+
+\small\tableofcontents
+
+\clearpage
+
+\section{First slide}
+
+Here's some text
+
+\clearpage
+
+Here's some stuff I wanted on the next slide
+
+\end{document}
