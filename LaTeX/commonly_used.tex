@@ -1,6 +1,16 @@
-% Refering
-\newcommand{\tabref}[1]{Table~\ref{#1}}
-\newcommand{\figref}[1]{Figure~\ref{#1}}
+% Referencing
+\makeatletter
+\def\tabref{\@ifstar\@tabref\@@tabref}
+\def\@tabref#1{Table~\ref{#1}}
+\def\@@tabref#1{(Table~\ref{#1})}
+\makeatother
+
+\makeatletter
+\def\figref{\@ifstar\@figref\@@figref}
+\def\@figref#1{Figure~\ref{#1}}
+\def\@@figref#1{(Figure~\ref{#1})}
+\makeatother
+
 \newcommand{\exmref}[1]{Example~\ref{#1}}
 \newcommand{\secref}[1]{Section~\ref{#1}}
 
