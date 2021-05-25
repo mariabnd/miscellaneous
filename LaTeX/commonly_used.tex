@@ -39,6 +39,17 @@
 \setcitestyle{numbers} % set the citation style to ``numbers''.
 % TO get numbered bibliography list % SOURCE tex.stackexchange.com/a/412250
 %\bibliography{references}
+%% Improve look of links in bibliography
+\usepackage[hyphens]{url}
+\usepackage{doi}
+\renewcommand*{\doi}[1]{DOI \texttt{\href{http://dx.doi.org/#1}{#1}}}
+\usepackage{hyperref}
+\hypersetup{breaklinks = true}
+\hypersetup{colorlinks = true, % Get rid of the boxes
+	linkcolor = {black},
+	citecolor = {black},
+	urlcolor = {blue!80!black}
+}
 
 % Encoding etc.
 \usepackage[utf8]{inputenc}
