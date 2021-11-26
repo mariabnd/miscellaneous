@@ -23,7 +23,7 @@
 % ===========================================
 %   - Includes field URL for internet address
 %   - Includes field DOI for Digital Object Idenfifier
-%   - Includes field annotate for annotation text
+%   - Includes field annote for annotation text
 
 ENTRY
   { address
@@ -933,7 +933,7 @@ FUNCTION {article}
   new.block
   note output
   fin.entry
-  format.annotate write$
+  format.annote write$
   newline$
 }
 
@@ -971,7 +971,7 @@ FUNCTION {book}
   new.block
   note output
   fin.entry
-  format.annotate write$
+  format.annote write$
   newline$
 }
 
@@ -989,7 +989,7 @@ FUNCTION {booklet}
   new.block
   note output
   fin.entry
-  format.annotate write$
+  format.annote write$
 }
 
 FUNCTION {inbook}
@@ -1030,7 +1030,7 @@ FUNCTION {inbook}
   new.block
   note output
   fin.entry
-  format.annotate write$
+  format.annote write$
 }
 
 FUNCTION {incollection}
@@ -1064,7 +1064,7 @@ FUNCTION {incollection}
   new.block
   note output
   fin.entry
-  format.annotate write$
+  format.annote write$
 }
 
 FUNCTION {inproceedings}
@@ -1097,7 +1097,7 @@ FUNCTION {inproceedings}
   new.block
   note output
   fin.entry
-  format.annotate write$
+  format.annote write$
 }
 
 FUNCTION {conference} { inproceedings }
@@ -1129,7 +1129,7 @@ FUNCTION {manual}
   new.block
   note output
   fin.entry
-  format.annotate write$
+  format.annote write$
 }
 
 FUNCTION {mastersthesis}
@@ -1150,7 +1150,7 @@ FUNCTION {mastersthesis}
   new.block
   note output
   fin.entry
-  format.annotate write$
+  format.annote write$
 }
 
 FUNCTION {misc}
@@ -1167,7 +1167,7 @@ FUNCTION {misc}
   new.block
   note output
   fin.entry
-  format.annotate write$
+  format.annote write$
   empty.misc.check
 }
 
@@ -1189,6 +1189,7 @@ FUNCTION {phdthesis}
   new.block
   note output
   fin.entry
+  format.annote write$
 }
 
 FUNCTION {proceedings}
@@ -1215,6 +1216,7 @@ FUNCTION {proceedings}
   new.block
   note output
   fin.entry
+  format.annote write$
 }
 
 FUNCTION {techreport}
@@ -1236,6 +1238,7 @@ FUNCTION {techreport}
   new.block
   note output
   fin.entry
+  format.annote write$
 }
 
 FUNCTION {unpublished}
@@ -1252,6 +1255,7 @@ FUNCTION {unpublished}
   new.block
   note "note" output.check
   fin.entry
+  format.annote write$
 }
 
 FUNCTION {default.type} { misc }
