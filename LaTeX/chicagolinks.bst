@@ -370,7 +370,7 @@ FUNCTION {format.authors}
   if$
 }
 
-FUNCTION {format.annotate}
+FUNCTION {format.annote}
 { annotate empty$
     { "" }
     { " \begin{quotation}\noindent "
