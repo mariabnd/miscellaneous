@@ -374,7 +374,7 @@ FUNCTION {format.annote}
 { annotate empty$
     { "" }
     { " \begin{quotation}\noindent "
-      annotate
+      annote
       * " \end{quotation} " *
     }
       if$
