@@ -1,26 +1,33 @@
 %%% ====================================================================
 %%%  @BibTeX-style-file{
-%%%     version         = "1",
-%%%     date            = "25th May 2021",
+%%%     version         = "2",
+%%%     date            = "25th November 2021",
 %%%     filename        = "chicagolinks.bst",
 %%%  }
 %%% ====================================================================
 %
-% "Chicago" BibTeX style with added url and doi fields: chicagolinks.bst
+% "Chicago" BibTeX style with added url, doi, and annote fields: chicagolinks.bst
 % ===================================
 %
+% V1 2021-05-25
 % This "chicagolinks" style is based on chicago.bst which is in turn based on newapa.bst
 % which is made from plain.bst, named.bst, and apalike.bst. The additional changes
 % included here are inspired by apalikedoiurl.bst by Samuel Pawel (github.com/SamCH93)
 % as well as unsrtnat.bst
 %
+% V2 2021-11-25
+% The additional changes now also include an annote field allowing for the creation of
+% annotated bibliographies. These changes are inspired by Mico (https://tex.stackexchange.com/a/225453)
+%
 % Modification from chicago.bst:
 % ===========================================
 %   - Includes field URL for internet address
 %   - Includes field DOI for Digital Object Idenfifier
+%   - Includes field annotate for annotation text
 
 ENTRY
   { address
+    annote
     author
     booktitle
     chapter
@@ -148,7 +155,6 @@ FUNCTION {output.year.check}
      }
   if$
 }
-
 
 FUNCTION {fin.entry}
 { add.period$
@@ -364,6 +370,16 @@ FUNCTION {format.authors}
   if$
 }
 
+FUNCTION {format.annotate}
+{ annotate empty$
+    { "" }
+    { " \begin{quotation}\noindent "
+      annotate
+      * " \end{quotation} " *
+    }
+      if$
+}
+
 FUNCTION {format.key}
 { empty$
     { key field.or.null }
@@ -438,7 +454,6 @@ FUNCTION {format.doi}
   if$
 }
 
-
 FUNCTION {n.dashify}
 { 't :=
   ""
@@ -493,7 +508,6 @@ FUNCTION {format.emphasize.booktitle}
     }
   if$
   }
-
 
 FUNCTION {tie.or.space.connect}
 { duplicate$ text.length$ #3 <
@@ -919,6 +933,8 @@ FUNCTION {article}
   new.block
   note output
   fin.entry
+  format.annotate write$
+  newline$
 }
 
 FUNCTION {book}
@@ -955,6 +971,8 @@ FUNCTION {book}
   new.block
   note output
   fin.entry
+  format.annotate write$
+  newline$
 }
 
 FUNCTION {booklet}
@@ -971,6 +989,7 @@ FUNCTION {booklet}
   new.block
   note output
   fin.entry
+  format.annotate write$
 }
 
 FUNCTION {inbook}
@@ -1011,6 +1030,7 @@ FUNCTION {inbook}
   new.block
   note output
   fin.entry
+  format.annotate write$
 }
 
 FUNCTION {incollection}
@@ -1044,6 +1064,7 @@ FUNCTION {incollection}
   new.block
   note output
   fin.entry
+  format.annotate write$
 }
 
 FUNCTION {inproceedings}
@@ -1076,6 +1097,7 @@ FUNCTION {inproceedings}
   new.block
   note output
   fin.entry
+  format.annotate write$
 }
 
 FUNCTION {conference} { inproceedings }
@@ -1107,6 +1129,7 @@ FUNCTION {manual}
   new.block
   note output
   fin.entry
+  format.annotate write$
 }
 
 FUNCTION {mastersthesis}
@@ -1127,6 +1150,7 @@ FUNCTION {mastersthesis}
   new.block
   note output
   fin.entry
+  format.annotate write$
 }
 
 FUNCTION {misc}
@@ -1143,6 +1167,8 @@ FUNCTION {misc}
   new.block
   note output
   fin.entry
+  format.annotate write$
+  empty.misc.check
 }
 
 FUNCTION {phdthesis}
