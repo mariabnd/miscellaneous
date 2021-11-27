@@ -371,7 +371,7 @@ FUNCTION {format.authors}
 }
 
 FUNCTION {format.annote}
-{ annotate empty$
+{ annote empty$
     { "" }
     { " \begin{quotation}\noindent "
       annote
