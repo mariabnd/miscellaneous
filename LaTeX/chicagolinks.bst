@@ -1,7 +1,7 @@
 %%% ====================================================================
 %%%  @BibTeX-style-file{
-%%%     version         = "2",
-%%%     date            = "25th November 2021",
+%%%     version         = "2.1",
+%%%     date            = "27th November 2021",
 %%%     filename        = "chicagolinks.bst",
 %%%  }
 %%% ====================================================================
@@ -18,6 +18,9 @@
 % V2 2021-11-25
 % The additional changes now also include an annote field allowing for the creation of
 % annotated bibliographies. These changes are inspired by Mico (https://tex.stackexchange.com/a/225453)
+%
+% V2.1 2021-11-27
+% Include missing empty.misc.check from plainnat.bst
 %
 % Modification from chicago.bst:
 % ===========================================
@@ -652,6 +655,16 @@ FUNCTION {format.in.ed.booktitle}
     { "In " format.editors.fml * ", " * format.emphasize.booktitle * }
     if$
   }
+  if$
+}
+
+FUNCTION {empty.misc.check}
+{ author empty$ title empty$ howpublished empty$
+  month empty$ year empty$ note empty$
+  and and and and and
+  key empty$ not and
+    { "all relevant fields are empty in " cite$ * warning$ }
+    'skip$
   if$
 }
 
