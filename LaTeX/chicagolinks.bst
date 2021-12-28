@@ -430,9 +430,9 @@ FUNCTION {format.title}
   if$
 }
 
-% Note that the APA style requres case changes
+% Note that the APA style requires case changes
 % in article titles. The following does not
-% change cases. If you perfer it, uncomment the
+% change cases. If you prefer it, uncomment the
 % following and comment out the above.
 
 %FUNCTION {format.title}
