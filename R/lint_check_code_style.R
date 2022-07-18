@@ -23,3 +23,5 @@ chk <- sapply(list_of_files,
 tinytest::expect_equal(lengths(chk), 0,
                        info = "Check all files linted as we would like")
 print(lengths(chk))
+# In case just want to look at ones that still have outstandings
+#print(lengths(chk)[which(lengths(chk) > 0)])
