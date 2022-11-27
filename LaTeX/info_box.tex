@@ -1,22 +1,17 @@
 \documentclass[12pt]{scrbook}
 
-% Adding numbers to info boxes from
-% https://tex.stackexchange.com/q/457897
-
-\usepackage{wrapfig}
-\setlength{\intextsep}{1pt} % Vertical padding around wrapfigure environ
 \usepackage{boxedminipage}
 
-\newcounter{fobox}[chapter] % Named "fobox" to differentiate from "infobox"
-\renewcommand{\thefobox}{\thechapter.\arabic{fobox}} % Count within chapter
-
-\newenvironment{infobox}[3]{
-	\refstepcounter{fobox}\par
-	\wrapfigure{#2}{#3}
-		\boxedminipage{#3}
-			\textbf{Box~\thefobox:\ #1}~\\ \noindent}
-		{\endboxedminipage
-	\endwrapfigure}
+\DeclareNewTOC[
+type = infobox,
+types = infoxboxes,
+float,
+name = Infobox,
+counterwithin=chapter,
+listname = {List of Infoboxes},
+atbegin=\boxedminipage{\textwidth},
+atend=\endboxedminipage
+]{inf}
 
 \begin{document}
 
@@ -24,11 +19,9 @@
 
 Here is some text I would have written before the info box. Here is some text I would have written before the info box. Here is some text I would have written before the info box. Here is some text I would have written before the info box. Here is some text I would have written before the info box. Here is some text I would have written before the info box. Here is some text I would have written before the info box. Here is some text I would have written before the info box. Here is some text I would have written before the info box. Here is some text I would have written before the info box.
 
-% Here is the info box to go on the right hand side somwehere
-
-\begin{infobox}{Testing}{R}{0.5\textwidth}
+\begin{infobox}[!htb]
+\caption{Testing}
 	Here is some content in the info box. Here is some content in the info box. Here is some content in the info box. Here is some content in the info box. 
-	% Surrounding text is supposed to wrap around this
 \end{infobox}
 
 Here is some text I would have written after but still related to the info box. Here is some text I would have written after but still related to the info box. Here is some text I would have written after but still related to the info box. Here is some text I would have written after but still related to the info box. Here is some text I would have written after but still related to the info box. Here is some text I would have written after but still related to the info box. Here is some text I would have written after but still related to the info box.
