@@ -2,6 +2,10 @@
 
 # Miscellaneous
 
+Useful pages
+* [regex101](https://regex101.com/)
+* [LTWA search](https://marcinwrochna.github.io/abbrevIso/)
+
 This repository is my catch-all for code. It currently contains
 * some [LaTeX](LaTeX)
 * some [R](R)
