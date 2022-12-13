@@ -1,0 +1,48 @@
+\documentclass[paper = a4, DIV = 17, BCOR = 3mm, headings = small, parskip = never]{scrartcl}
+
+\addtokomafont{disposition}{\rmfamily\itshape}
+
+\setlength{\parindent}{0pt}
+
+% Redefine paragraph counter
+\renewcommand{\theparagraph}{\arabic{paragraph})\noindent}
+\setcounter{secnumdepth}{5} % Numbered paragraphs
+
+%Spacing after paragraphs
+\RedeclareSectionCommand[
+afterindent = false,
+afterskip=\fill,
+beforeskip=\fill]{paragraph}
+
+\let\oldparagraph\paragraph
+\renewcommand{\paragraph}[1]{\oldparagraph{#1}~\\}
+
+\addtokomafont{section}{\centering}
+
+\usepackage{lipsum} % For placeholder text
+
+\begin{document}
+
+We provide below point-by-point responses to the reviewer comments to our submission to \emph{Journal}.
+
+\section*{Reviewer 1}
+
+\paragraph{\lipsum[1]}
+\lipsum[2]
+
+\paragraph{\lipsum[3]}
+\lipsum[4]
+
+\paragraph{\lipsum[5]}
+\lipsum[6]
+
+\section*{Reviewer 2}
+
+\paragraph{\lipsum[7]}
+\lipsum[8]
+
+\section*{Additional changes}
+
+\lipsum[9]
+
+\end{document}
