@@ -21,7 +21,7 @@ According to Overleaf (cf. [tex.stackexchange.com/a/603351](tex.stackexchange.co
 
 ```
 \RequirePackage{shellesc}
-\ShellEscape{latexdiff --append-context2cmd="abstract" old.tex draft.tex > diff.tex}
+\ShellEscape{latexdiff --append-context2cmd="abstract" main1.tex main2.tex > diff.tex}
 % --append-context2cmd="abstract" ensures changes to the abstract are also shown
 \input{diff}
 \documentclass{dummy}
