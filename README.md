@@ -9,6 +9,7 @@ Useful pages
 This repository is my catch-all for code. It currently contains
 * some [LaTeX](LaTeX)
 * some [R](R)
+* some [Git](git)
 
 For other resources, see _[Resources](https://github.com/mariabnd/resources)_ and for gists go [here](https://gist.github.com/mariabnd).
 
