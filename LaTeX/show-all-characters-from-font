@@ -1,0 +1,14 @@
+\usepackage{fonttable}
+
+\makeatletter
+\def\uchevron{\bgroup \markoverwith{\lower3.5\p@\hbox{\sixly \char42}}\ULon}
+\font\sixly=lasy6 % does not re-load if already loaded, so no memory problem.
+\makeatother
+
+\begin{document}
+\fonttable{lasy6}
+
+% For changing ulem, e.g.
+\uchevron{hello}
+
+\end{document}
