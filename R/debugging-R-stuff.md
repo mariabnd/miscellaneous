@@ -2,11 +2,6 @@
 
 _Saved here in case this is of use to future me (my main collaborator)_
 
-
-# Debugging issues
-
-_Saved here in case this is of use to future me (my main collaborator)_
-
 Error message: none
 
 Underlying problem:
